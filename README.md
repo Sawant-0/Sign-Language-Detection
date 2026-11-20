@@ -99,6 +99,30 @@ python desktop_app.py
 
 ---
 
+## 📸 Application Screenshots & Live Output Gallery
+
+### 1. Home Dashboard & System Status
+Displays real-time model readiness, custom sign class count, total saved samples, and navigation cards.
+![Home Dashboard Overview](assets/dashboard_overview.jpg)
+
+### 2. Live Sign Detection Interface
+Live camera feed with real-time confidence thresholding, hand detection sensitivity, status banners, and multi-class predictions.
+![Live Sign Detection Interface](assets/live_detection_ui.jpg)
+
+### 3. Recording Custom Sign Samples via Webcam
+Live interactive landmark capture studio with countdown timer, burst capture settings, and hand presence constraints.
+![Webcam Recording Controls](assets/record_signs_studio.jpg)
+
+### 4. Dataset Class Distribution & Quality Inspection
+Detailed breakdown of samples per sign class and sample quality inspection across single-handed and two-handed gestures.
+![Dataset Class Distribution](assets/dataset_distribution_ui.png)
+
+### 5. Dataset Management & Sample Auditing
+Audit saved classes, inspect sample breakdowns, rename labels, or clean inconsistent frames with 1-click auto-alignment.
+![Dataset Class Management](assets/manage_classes_ui.jpg)
+
+---
+
 ## 📖 End-to-End User Guide
 
 ### Step 1: Add New Custom Signs
@@ -217,8 +241,13 @@ Sample distribution across collected custom vocabulary:
 
 ```
 Sign Language Detection/
-├── assets/                        # Visual assets, architecture diagrams & output demos
-│   ├── demo_live_detection.png    # Live HUD real-time inference preview
+├── assets/                        # Visual assets, UI screenshots & output demos
+│   ├── dashboard_overview.jpg     # Real UI: Home dashboard & status cards
+│   ├── live_detection_ui.jpg      # Real UI: Live sign detection interface
+│   ├── record_signs_studio.jpg    # Real UI: Webcam recording & sample capture
+│   ├── dataset_distribution_ui.png# Real UI: Dataset distribution & breakdown
+│   ├── manage_classes_ui.jpg      # Real UI: Class management & audit table
+│   ├── demo_live_detection.png    # High-FPS HUD real-time inference preview
 │   ├── system_architecture.png    # End-to-end 5-stage pipeline diagram
 │   ├── confusion_matrix.png       # Seaborn validation heatmap
 │   └── dataset_distribution.png   # Class distribution bar chart
